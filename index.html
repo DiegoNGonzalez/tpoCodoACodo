@@ -12,14 +12,30 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
             rel="stylesheet"
         />
+
+        <!--FAVICON-->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
         <!--CSS-->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <header class="topHeader">
-            <a href="index.html"> <img src="assets/img/ca_palermo_logo.svg" alt="logo del club palermo" class="logo"></a>
+            
             <nav class="navHeader">
+                
                 <ul class="ulHeader">
+                    <li class="liHeader">
+                        <a href="index.html">
+                            <img
+                                src="assets/img/ca_palermo_logo.svg"
+                                alt="logo del club palermo"
+                                class="logo"
+                            />
+                        </a>
+                    </li>
                     <li class="liHeader"><a href="">Historia</a></li>
                     <li class="liHeader"><a href="">Actividades</a></li>
                     <li class="liHeader"><a href="">La cantina</a></li>
@@ -27,16 +43,35 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <div class="contenedorTitulo">
-            <h1 class="tituloMain">Club Atletico Palermo</h1>
-            <h3 class="subtituloMain">Institución social y deportiva</h3>
+        <main class="contenedorMain">
+            <div class="contenedorSplash">
+                <div class="imgSplash">
+                    <img src="assets/img/clubpalermo.jpg" alt="fachada del club atletico palermo">
+                </div>
+                <div class="txtSplash">
+                    <h1 class="tituloSplash">Club Atletico Palermo</h1>
+                    <h3 class="subtituloSplash">
+                        Institución social y deportiva
+                    </h3>
+                    <p>
+                        El <strong> Club Atlético Palermo</strong>,
+                        habitualmente llamado Club Palermo, es una institución
+                        centenaria argentina fundada el 21 de julio de 1914 en
+                        el barrio de Palermo, en Buenos Aires, siendo el club
+                        <strong> más antiguo</strong> de su zona.
+                    </p>
+                </div>
             </div>
         </main>
+        <section class="sectionNovedades">
+            <article class="articuloNovedades"> 
+                <h2>Novedades</h2>
+
+            </article>
+        </section>
         <footer>
-
+            <h2>copyright </h2>
         </footer>
-
 
         <!--javascript-->
         <script src="js/main.js"></script>

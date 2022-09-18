@@ -1,48 +1,106 @@
-*{
-    font-family:'Montserrat', sans-serif;
+* {
+    font-family: "Montserrat", sans-serif;
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
-body{
+body {
     background: #f5f5f5;
 }
 
-.topHeader{
-    width: 100%;
+.topHeader {
     height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: #616161;
+    background: #1c6ea4;
     padding: 10px;
+
 }
-.logo{
+.logo {
     height: 70px;
+
 }
-.navHeader{
-    width: 500px;
-    padding: 10px;
-    
+.navHeader {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border: 3px inset #e0e0e0;
+    border-radius: 13px;
 }
-.ulHeader{
+
+.ulHeader {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
+    padding: 0px;
 }
-.liHeader{
-    margin: 0px 15px ;
+.liHeader {
+    margin: 0px 15px;
 }
-.liHeader a{   
+.liHeader a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
     color: #f5f5f5;
 }
-.liHeader a:hover{
+.liHeader a:hover {
     cursor: pointer;
     color: black;
     transition: all 0.5s;
+}
+.contenedorMain {
+    height: calc(100vh - 80px);
+    width: 100%;
+    background: #ad1457;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorSplash {
+    margin-top: 10px;
+    width: 90vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #1c6ea4;
+    border-radius: 20px;
+    border: 5px double #e0e0e0;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.84);
+}
+.imgSplash {
+    padding: 10px;
+    width: 50%;
+}
+.imgSplash img {
+    border-radius: 10px;
+    width: 40vw;
+    height: 50vh;
+    object-fit: cover;
+}
+.txtSplash {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.txtSplash > h3 {
+    padding: 10px 0px;
+}
+.sectionNovedades{
+    background: #e0e0e0;
+    height: 70vh;
+    width: 100%;
+}
+.articuloNovedades{
+    margin-top: 10px;
+    width: 90vw;
+    height: 45vh;
+    background: #e0e0e0;
+    display: grid;
 }
