@@ -1,79 +1,294 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Club Atletico Palermo</title>
-        <!--GOOGLE FONTS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
-            rel="stylesheet"
-        />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto002 - WinterHack</title>
 
-        <!--FAVICON-->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-        <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-        <!--CSS-->
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-        <header class="topHeader">
-            
-            <nav class="navHeader">
+    <meta name="description" content="Pagina del Podcast ">
+    <meta name="keywords" content="podcast, command, line, heroes, red hat, codigo, it, python, tecnologia, javascript">
+    <meta name="author" content="Diego Nicolas Gonzalez, Luis Maria Carena Goity">
+    <meta name="copyright" content="DNGV & LMCG Codo A Codo 2022">
+    <!--ROBOTS-->
+    <meta name="robots" content="index nofollow">
+
+    <!--FACEBOOK-->
+    <meta property="og:title" content="Command line heroes en español" />
+    <meta property="og:description" content="pagina dedicada al podcast Command Line Heroes en español " />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://tpocodoacodo.web.app/assets/img/logo.jfif" />
+    <meta property="og:url" content="https://tpocodoacodo.web.app/" />
+
+    <!--TWITTER-->
+    <meta property="twitter:title" content="Command line heroes en español" />
+    <meta property="twitter:description" content="agina dedicada al podcast Command Line Heroes en español " />
+    <meta property="twitter:type" content="website" />
+    <meta property="twitter:image" content="https://tpocodoacodo.web.app/assets/img/logo.jfif" />
+    <meta property="twitter:url" content="https://tpocodoacodo.web.app/" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/d7c6884827.js" crossorigin="anonymous"></script>
+    <!--FAVICON-->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/png">
+</head>
+<body>
+    <header class="top-header">
+        <a href="index.html">
+            <img src="assets/img/logo.jfif" alt="" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="https://open.spotify.com/show/6J8WTcxvJcAXZQCpCKWq2T"><img src="assets/img/spoti.png" alt="logo de Spotify" class="btn-nav"></a></li>
+                <li><a href="https://twitter.com/redhatla?lang=es"><img src="assets/img/twitter.png" alt="logo de Twitter" class="btn-nav"></a></li>
+                <li><a href="https://www.instagram.com/redhatinc/?hl=es"><img src="assets/img/insta.png" alt="logo de Instagam" class="btn-nav"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="splashs" itemscope itemtype="https://schema.org/PodcastSeries">
+
+            <div class="info" >
+                <meta itemprop="author" content="Red Hat">
+                <meta itemprop="webFeed" content="https://www.redhat.com/es/command-line-heroes/season-1">
+                <meta itemprop="image" content="https://www.redhat.com/cms/managed-files/laptop_trailer.png">
+                <h1 class="title-splash" itemprop="name">Command Line Heroes en español</h1>
+                <p class="text-splash" itemprop="about">
+                    <strong>Command Line Heroes En Español</strong> cuenta las épicas historias reales de cómo los desarrolladores, programadores, hackers, geeks y rebeldes de código abierto están revolucionando el panorama tecnológico. <br>
+                    Presentado por <strong> Red Hat</strong>, este podcast se basa en el galardonado programa en inglés del mismo nombre.
+                </p>
                 
-                <ul class="ulHeader">
-                    <li class="liHeader">
-                        <a href="index.html">
-                            <img
-                                src="assets/img/ca_palermo_logo.svg"
-                                alt="logo del club palermo"
-                                class="logo"
-                            />
-                        </a>
-                    </li>
-                    <li class="liHeader"><a href="">Historia</a></li>
-                    <li class="liHeader"><a href="">Actividades</a></li>
-                    <li class="liHeader"><a href="">La cantina</a></li>
-                    <li class="liHeader"><a href="">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="contenedorMain">
-            <div class="contenedorSplash">
-                <div class="imgSplash">
-                    <img src="assets/img/clubpalermo.jpg" alt="fachada del club atletico palermo">
+            </div>
+            <div class="player">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1LB0EUzzA8OhhFK8b8BSMf?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        
+        
+
+    </section>
+        <section class="sectionCarousel">
+        <div class="title-otros">
+            <h2>Sobre Command Line Heroes</h2>
+        </div>
+        <div class="textoSobre">
+            <p class="parrafoSobre">
+                El software de código abierto está cambiando el mundo, a menudo en silencio, detrás de escena. Los primeros <em>héroes de la línea de comandos</em> crearon <strong>Linux</strong>, un sistema operativo abierto que cualquiera podía usar y personalizar por sí mismo. Ahora, gran parte de la infraestructura que ejecuta Internet se desarrolla al aire libre. El desarrollo de código abierto permite a las personas elegir cómo crean el software, qué quieren crear y abre las puertas a nuevos participantes y nuevas ideas.
+            </p>
+            <p class="parrafoSobre">
+                <strong><em>Command Line Heroes</em></strong> es un podcast original de <strong><a href="https://www.redhat.com/es" target="_blank">Red Hat</a></strong> que arroja luz sobre los héroes de código abierto que transforman el mundo de la tecnología desde la línea de comandos. El <a href="https://www.redhat.com/es/command-line-heroes" target="_blank">podcast</a> crea conciencia sobre las herramientas, técnicas y tecnologías de código abierto y también explica por qué el código abierto es importante más allá de la industria tecnológica.
+            </p>
+        </div>
+        
+        <div class="carrouselContainer">
+                <div class="carrousel" id="carrousel">
+                    <div class="carrouselCard">
+                        <div class="carrouselImg">
+                            <img src="assets/img2/diego-barrilete.jpg" alt="" />
+                        </div>
+                        <div class="carrouselTexto">
+                            <h3>asdasd</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nostrum, tenetur. Inventore
+                                mollitia ad ducimus obcaecati.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carrouselCard">
+                        <div class="carrouselImg">
+                            <img src="assets/img2/diego-boke.jpg" alt="" />
+                        </div>
+                        <div class="carrouselTexto">
+                            <h3>asdasd</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nostrum, tenetur. Inventore
+                                mollitia ad ducimus obcaecati.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carrouselCard">
+                        <div class="carrouselImg">
+                            <img src="assets/img/tercera.jfif" alt="imagen del capitulo presentamos la tercera temporada">
+                        </div>
+                        <div class="carrouselTexto">
+                        <h3 itemprop="name">Presentamos la tercer temporada de Command Line Heroes en español</h3>
+                    <p itemprop="about">Ya llegó la tercera temporada de <em>Command Line Heroes</em> en español. Vamos a hablar de <strong>Python, JavaScript y Perl</strong>. ¡Y eso es solo el principio!</p>
+                    <div class="btn-card">
+                    <a href="">Escuchalo en <i class="fa-brands fa-spotify"></i></a>
                 </div>
-                <div class="txtSplash">
-                    <h1 class="tituloSplash">Club Atletico Palermo</h1>
-                    <h3 class="subtituloSplash">
-                        Institución social y deportiva
-                    </h3>
-                    <p>
-                        El <strong> Club Atlético Palermo</strong>,
-                        habitualmente llamado Club Palermo, es una institución
-                        centenaria argentina fundada el 21 de julio de 1914 en
-                        el barrio de Palermo, en Buenos Aires, siendo el club
-                        <strong> más antiguo</strong> de su zona.
+                        </div>
+                    </div>
+                </div>
+                <div class="carrouselBtn btnDcha" id="btnDerecha">></div>
+                <div class="carrouselBtn btnIzq" id="btnIzquierda"><</div>
+            </div>
+
+            <div class="textoSobre">
+                <p class="textoSobre">
+                    Queríamos crear un programa sobre tecnologías y tendencias de código abierto que interesara a los desarrolladores y administradores de sistemas. No podía sonar como un comercial y tenía que ir más allá de los aspectos prácticos de la tecnología misma. Para crear un programa que cubriera el código abierto que interesara a nuestro público objetivo, los escuchamos primero.
+                </p>
+            </div>
+    </section>
+
+    <section class="otros-ep">
+        
+        <div class="contenedor-ep" >
+            <div class="title-otros">
+                <h2>Otros episodios de Command Line Heroes</h2>
+            </div>
+            <div class="card-episodio" itemscope itemtype="https://schema.org/PodcastEpisode">
+                <div class="img-episodio" itemprop="image" content="assets/img/tercera.jfif">
+                    <img src="assets/img/tercera.jfif" alt="imagen del capitulo presentamos la tercera temporada">
+                </div>
+                <div class="text-episodio">
+                    <h3 itemprop="name">Presentamos la tercer temporada de Command Line Heroes en español</h3>
+                    <p itemprop="about">Ya llegó la tercera temporada de <em>Command Line Heroes</em> en español. Vamos a hablar de <strong>Python, JavaScript y Perl</strong>. ¡Y eso es solo el principio!</p>
+                </div>
+                <div class="btn-card">
+                    <a href="">Escuchalo en <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <meta itemprop="duration" content="00:02:56">
+                <meta itemprop="author" content="Red Hat">
+                <meta itemprop="episodeNumber" content="01">
+                <meta itemprop="partOfSeries" content="Season 3">
+            </div>
+            <div class="card-episodio" itemscope itemtype="https://schema.org/PodcastEpisode">
+                <div class="img-episodio" itemprop="image" content="assets/img/cobol.jfif">
+                    <img src="assets/img/cobol.jfif" alt="imagen del episodio lenguajes que llegaron para quedarse: COBOL y GO">
+                </div>
+                <div class="text-episodio">
+                    <h3 itemprop="name">Lenguajes que llegaron para quedarse: COBOL y GO</h3>
+                    <p itemprop="about">Los lenguajes que se utilizan para la infraestructura de TI no tienen fecha de vencimiento. COBOL lleva 60 años en acción, y así va a seguir. Al mismo tiempo que mantenemos miles y millones de líneas de código clásico para las mainframes, desarrollamos nuevas infraestructuras para la nube en lenguajes como Go.</p>
+                </div>
+                <div class="btn-card">
+                    <a href="">Escuchalo en <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <meta itemprop="duration" content="00:29:24">
+                <meta itemprop="author" content="Red Hat">
+                <meta itemprop="episodeNumber" content="02">
+                <meta itemprop="partOfSeries" content="Season 3">
+            </div>
+            <div class="card-episodio" itemscope itemtype="https://schema.org/PodcastEpisode">
+                <div class="img-episodio" itemprop="image" content="assets/img/lisp.jfif">
+                    <img src="assets/img/lisp.jfif" alt="imagen del episodio hablar con las maquinas: LISP y los origenes de la inteligencia artificial">
+                </div>
+                <div class="text-episodio">
+                    <h3 itemprop="name">Hablar con las maquinas: LISP y los origenes de la inteligencia artificial</h3>
+                    <p itemprop="about">En la década de los 50, crear una máquina pensante parecía cuento de ciencia ficción. Pero John McCarthy decidió hacerlo realidad, y comenzó con un idioma que llamó LISP. Colin Garvey nos cuenta que McCarthy creó el primer lenguaje para la inteligencia artificial (IA).</p>
+                </div>
+                <div class="btn-card">
+                    <a href="">Escuchalo en <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <meta itemprop="duration" content="00:29:04">
+                <meta itemprop="author" content="Red Hat">
+                <meta itemprop="episodeNumber" content="03">
+                <meta itemprop="partOfSeries" content="Season 3">
+            </div>
+            
+            <div class="card-episodio" itemscope itemtype="https://schema.org/PodcastEpisode">
+                <div class="img-episodio" itemprop="image" content="assets/img/revolucionC.jfif">
+                    <img src="assets/img/revolucionC.jfif" alt="imagen del episodio la revolucion de C">
+                </div>
+                <div class="text-episodio">
+                    <h3 itemprop="name">La revolución de C</h3>
+                    <p itemprop="about">C y UNIX son la base de la informática moderna. Muchos de los lenguajes de los que hemos hablado esta temporada están relacionados o al menos tuvieron alguna influencia de C. Lo increíble es que C y UNIX surgieron gracias a cuatro desarrolladores de Bell Labs que se aferraron a sus sueños y los crearon como un proyecto propio.</p>
+                </div>
+                <div class="btn-card">
+                    <a href="">Escuchalo en <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <meta itemprop="duration" content="00:27:18">
+                <meta itemprop="author" content="Red Hat">
+                <meta itemprop="episodeNumber" content="04">
+                <meta itemprop="partOfSeries" content="Season 3">
+            </div>
+
+
+            <div class="card-episodio" itemscope itemtype="https://schema.org/PodcastEpisode">
+                <div class="img-episodio" itemprop="image" content="assets/img/python.jfif">
+                    <img src="assets/img/python.jfif" alt="imagen del capitulo las avneturas de python">
+                </div> 
+                <div class="text-episodio">
+                    <h3 itemprop="name">Las aventuras de Python</h3>
+                    <p itemprop="about">
+                        Con la renuncia del dictador benevolente de por vida, la evolución de Python cambió para siempre. El mensaje titulado "Transferencia de poder" resalta la manera en que evolucionan los lenguajes de programación. En este episodio, Emily Morehouse analiza la relación entre la expansibilidad de Python y su comunidad incluyente.
                     </p>
                 </div>
+                <div class="btn-card">
+                    <a href="">Escuchalo en <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <meta itemprop="duration" content="00:29:20">
+                <meta itemprop="author" content="Red Hat">
+                <meta itemprop="episodeNumber" content="05">
+                <meta itemprop="partOfSeries" content="Season 3">
             </div>
-        </main>
-        <section class="sectionNovedades">
-            <article class="articuloNovedades"> 
-                <h2>Novedades</h2>
+            <div class="card-episodio" itemscope itemtype="https://schema.org/PodcastEpisode">
+                <div class="img-episodio" itemprop="image" content="assets/img/basic.jfif">
+                    <img src="assets/img/basic.jfif" alt="imagen del capitulo primero lo BASICo">
+                </div>
+                <div class="text-episodio">
+                    <h3 itemprop="name">Primero lo BASICo</h3>
+                    <p itemprop="about">Antes necesitabas haber estudiado un doctorado y tener una gran cantidad de hardware para poder ser programador. Pero en 1965 dos ingenieros tuvieron una idea revolucionaria: facilitar la programación para que la gente pudiera introducirse a ella.</p>
+                </div>
+                <div class="btn-card">
+                    <a href="">Escuchalo en <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <meta itemprop="duration" content="00:26:57">
+                <meta itemprop="author" content="Red Hat">
+                <meta itemprop="episodeNumber" content="06">
+                <meta itemprop="partOfSeries" content="Season 3">
+            </div>
+            <div class="card-episodio" itemscope itemtype="https://schema.org/PodcastEpisode">
+                <div class="img-episodio" itemprop="image" content="assets/img/pearl.jfif">
+                    <img src="assets/img/pearl.jfif" alt="imagen del capitulo el cultivo de perl">
+                </div>
+                <div class="text-episodio">
+                    <h3 itemprop="name">El cultivo de Perl</h3>
+                    <p itemprop="about">Los lenguajes van y vienen. Algunos tienen lo que se necesita para llegar a la cima, pero solo unos cuantos se quedan en las alturas. Perl logró un ascenso impresionante, tuvo una caída silenciosa, y parece que ya encontró su lugar en el mundo de la programación.</p>
+                    
+                </div>
+                <div class="btn-card">
+                    <a href="">Escuchalo en <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <meta itemprop="duration" content="00:28:13">
+                <meta itemprop="author" content="Red Hat">
+                <meta itemprop="episodeNumber" content="07">
+                <meta itemprop="partOfSeries" content="Season 3">
+            </div>
 
-            </article>
-        </section>
-        <footer>
-            <h2>copyright </h2>
-        </footer>
+            <div class="card-episodio" itemscope itemtype="https://schema.org/PodcastEpisode">
+                <div class="img-episodio" itemprop="image" content="assets/img/shell.jfif">
+                    <img src="assets/img/shell.jfif" alt="imagen del episodio todo un mar de shell">
+                </div>
+                <div class="text-episodio">
+                    <h3 itemprop="name">Todo un mar de shell</h3>
+                    <p itemprop="about">La TI a gran escala es posible gracias a los shells. Actualmente son un elemento necesario en la informática, pero probablemente no habría sido así sin el arduo trabajo de uno de los desarrolladores de la Free Software Foundation llamado Brian Fox.Ahora, el Bash shell se encuentra en casi todas las computadoras del mundo. </p>
+                </div>
+                <div class="btn-card">
+                    <a href="">Escuchalo en <i class="fa-brands fa-spotify"></i></a>
+                </div>
+                <meta itemprop="duration" content="00:26:24">
+                <meta itemprop="author" content="Red Hat">
+                <meta itemprop="episodeNumber" content="08">
+                <meta itemprop="partOfSeries" content="Season 3">
+            </div>
+        </div>
 
-        <!--javascript-->
-        <script src="js/main.js"></script>
+
+
+    </section> 
+
+    <footer>
+        <h5>Copyright DNGV LMCG Codo A Codo 2022</h5>
+        
+    </footer>
+    <script src="js/main.js"></script>
     </body>
-</html>
+    </html>
