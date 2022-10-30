@@ -1,13 +1,23 @@
-body {
-    margin: 0px;
+*{
     font-family: "Roboto Mono", monospace;
-    background: #673ab7;
+    box-sizing: border-box;
+    margin:0;
+    scroll-behavior: smooth;
+}
+.espaciado{
+    margin-bottom: 30px
+}
+body{
+    background: #8350dca7;
 }
 header {
     display: flex;
     background: #512da8;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 .logo {
     height: 60px;
@@ -15,19 +25,31 @@ header {
     padding-left: 10px;
 }
 nav {
-    width: 500px;
+    width: 700px;
+    margin-right: 20px;
 }
-ul {
+.ulNav {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.ulNav li a{
+    text-decoration: none;
+    color: #ffcd54;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.ulNav li a:hover{
+    color: #fafafa;
+    font-size: 0.9rem;
+    
 }
 .btn-nav {
     width: 40px;
     height: 40px;
 }
-.splashs {
-    min-height: 90vh;
+.splash {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,6 +57,7 @@ ul {
     flex-wrap: wrap;
     background: url(../assets/img/fondo.jpg) no-repeat center center;
     background-size: cover;
+    margin-bottom: 20px;
 }
 
 .info {
@@ -52,6 +75,7 @@ ul {
 .player {
     width: 50%;
 }
+/*SECTION OTROS EPISODIOS*/
 .otros-ep {
     background: #d1c4e9;
     padding: 0 20px;
@@ -63,6 +87,7 @@ ul {
     text-align: center;
     font-weight: 700;
     width: 100%;
+    margin-top: 70px;
 }
 .contenedor-ep {
     display: flex;
@@ -70,12 +95,13 @@ ul {
     justify-content: space-between;
     padding-bottom: 90px;
     max-width: 100%;
+    margin-bottom: 0;
 }
 .card-episodio {
     width: 360px;
     margin: 10px;
     background-color: #673ab7;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px;
     height: auto;
     display: flex;
@@ -91,6 +117,7 @@ ul {
     font-size: 15px;
     flex: 1;
     color: #fff;
+    padding: 10px;
 }
 
 .btn-card {
@@ -108,6 +135,9 @@ ul {
     border-radius: 30px;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
         0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+.btn-card a:hover{
+    color: #fafafa;
 }
 /* Section del carrousel */
 .sectionCarousel {
@@ -151,10 +181,10 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #673ab7;
     height: 20vh;
     padding: 10px;
     color: #fafafa;
+    margin-top: 5px;
 }
 .carrouselBtn {
     position: absolute;
@@ -178,12 +208,289 @@ ul {
 .btnIzq {
     left: 10px;
 }
+.titleAbout{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    color: #fafafa;
+    margin-top: 70px;
+}
+.textoSobre{
+    padding: 10px;
+    font-size: 1rem;
+    color: #212121;
+}
+.parrafoSobre{
+    margin: 10px;
+}
+.parrafoSobre a{
+    text-decoration:none;
+    color: #ffcd54;
+}
+/*SECTION RED HAT*/
+
+.redHat{
+    background: #fafafa ;
+    min-height: 100vh;
+}
+.imgBanner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.imgBanner img{
+    width: 40%;
+    height: 40vh;
+}
+.card-redHat{
+    width: 360px;
+    margin: 10px;
+    background-color: #673ab7;
+    border-radius: 15px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.card-redHat .img-episodio img{
+    min-height: 300px;
+}
+.text-card-redHat{
+    font-size: 15px;
+    color: #fff;
+    padding: 10px;
+}
+
+/*SECTION FORMULARIO*/
+.sectionForm{
+    min-height: 100vh;
+    display: flex;
+}
+.container-form{
+    width: 100%;
+    margin: auto;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+    text-align: center;
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 70%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0px;
+}
+.container-form .btn-enviar{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background:#e39403;
+    color: #fafafa;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+    background: #fafafa;
+    color: #e39403;
+}
+#errorMail, #errorNombre{
+    margin-bottom: 10px;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*FOOTER*/
 footer {
     padding: 1rem;
-    background: #512da8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #673ab7;
 }
 footer h5 {
     text-align: center;
     font-weight: 700;
     font-size: 20px;
+}
+.ulFooter{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.ulFooter li{
+    list-style: none;
+}
+/* ESTILOS MENU HAMBURGUESA*/
+/* Estilos para el ícono del Menú */
+.icono-menu{
+    margin: 0px 50px;
+    position: relative;
+    z-index: 10;
+    display: none;
+    margin-bottom: 30px
+}
+
+/*btn menu animado*/
+.lbl-menu{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+	transform: scale(1.2);
+}
+.lbl-menu #spn1,#spn2,#spn3{
+    position: absolute;
+    content: '';
+    background:#ffff;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+#spn2{
+    top: 12px;
+}
+#spn3{
+    top: 23px;
+}
+#btn-menu{
+    display: none;
+}
+#btn-menu:checked ~ .lbl-menu #spn1{
+    transform: rotate(140deg);
+    top: 10px;
+}
+#btn-menu:checked ~ .lbl-menu #spn2{
+    opacity: 0;
+}
+#btn-menu:checked ~ .lbl-menu #spn3{
+    transform: rotate(-140deg);
+    top: 10px;
+}
+/* Estilos para el contenedor del Menú */
+.cont-menu{
+    background-color: rgba(161, 87, 245, 0.872);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .5s ease;
+    display: none;
+}
+
+/* Estilos por agregar en JavaScript */
+.active{
+    transform: translate(600px);
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li a{
+    color: #ffcd54;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li a:hover{
+    background-color: #512da8;
+    color: #fafafa;
+    border-radius: 25px;
+}
+/*MEDIA QUERYS*/
+@media only screen and (max-width:768px){
+    .title-splash{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .logo{
+        width: 45px;
+        height: 45px;
+    }
+    .icono-menu{
+        display: block;
+    }
+    .cont-menu{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .card-episodio{
+        width: 330px;
+        margin-bottom: 30px;
+    }
+    .card-episodio p{
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    footer h5{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:480px){
+    .contenedor-ep{
+        justify-content: center;
+    }
+    .title-splash{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .text-splash{
+        font-size: 15px;
+    }
+    .title-otros{
+        font-size: 20px;
+        margin-bottom: 25px;
+        margin-top: 50px;
+    }
+    .carrouselTexto{
+        font-size: 13px;
+    }
+    .text-episodio{
+        font-size: 13px;
+    }
+    .info-form{
+        padding: 10px;
+    }
+    footer h5{
+        font-size: 15px;
+    }
 }
