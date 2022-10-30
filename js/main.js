@@ -29,45 +29,58 @@ const validarNombre = () => {
     if (name.length == 0) {
         errorNombre.innerHTML = "Ingrese nombre";
         alertaFormIncompleto();
+        return false
     }
     if (!name.match(/^[a-zA-ZÀ-ÿ\s]{2,40}$/)) {
         errorNombre.innerHTML = "Ingrese nombre completo";
         alertaFormIncompleto();
-    }
-};
+        return false
+    } else {
+        return true
+    };
+}
+    
 const validarMail = () => {
         let email = inputEmail.value;
 
         if (email.length == 0) {
             errorMail.innerHTML = "Ingrese Email";
             alertaFormIncompleto();
-        }
-        if (
+            return false
+        }else if (
             !email.match(/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,3}$/)
         ) {
             errorMail.innerHTML = "Email no valido";
             alertaFormIncompleto();
+            return false
+        } else {
+            return true
         }
     }
-
+const validarForm = () => {
+    return (
+        validarMail () && validarNombre()
+    )
+}
 // consumo api formspree
 formulario.addEventListener("submit", handleSubmit);
 
 async function handleSubmit(event) {
     event.preventDefault();
-    validarNombre();
-    validarMail();
-    const form = new FormData(this);
-    const response = await fetch(this.action, {
-        method: this.method,
-        body: form,
-        headers: {
-            Accept: "application/json",
-        },
-    });
-    if (response.ok) {
-        this.reset();
-        alerta();
+    if (validarForm()) {
+        
+        const form = new FormData(this);
+        const response = await fetch(this.action, {
+            method: this.method,
+            body: form,
+            headers: {
+                Accept: "application/json",
+            },
+        });
+        if (response.ok) {
+            this.reset();
+            alerta();
+        }
     }
 }
 
